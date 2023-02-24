@@ -1,0 +1,143 @@
+.CategoryPage {
+    // background: #000;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(139.56deg, rgba(233, 237, 201, 0.231) 0.63%, rgba(217, 211, 244, 0.5544) 80.18%);
+}
+
+
+.Category__body {
+    position: relative;
+    z-index: 3;
+    .category__title{
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 25px 0 23px 0;
+      h3{
+          margin-top: 24px;
+          width: 100px;
+          text-align: center;
+      }
+    }
+    .category__line2{
+            padding: 54px 10%;
+    }
+}
+
+.category__items {
+    .category__items__line {
+        .category__item {
+            width: 200px;
+            height: 220px;
+            background: linear-gradient(114.63deg, rgba(255, 254, 254, 0.5) -184.23%, rgba(255, 254, 254, 0.01) 75.28%);
+            border: 1px solid rgba(0, 0, 0, 0.22);
+            border-radius: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 22px 16px 0 16px;
+            color: rgba(43, 43, 43, 0.952);
+            .category__items_imgs {
+                width: 59px;
+                height: 62px;
+                background: #F4FFED;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                img {
+                    width: 46px;
+                    height: 46px;
+                }
+            }
+            .category-item-text{
+                h2{
+                    font-size: 32px;
+                    margin: 9px 0 2px 0;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/**********************************/
+/*****------CategoryBg--------********/
+/**********************************/
+
+@mixin circleFnc($width: 30px, $top: 30px, $left: 30px) {
+    width: $width;
+    height: $width;
+    border: 2px solid rgba(197, 197, 197, 0.096);
+    border-radius: 50%;
+    background: linear-gradient(152.6deg, #CDB4DB 1.87%, #B8D8EA 144.2%);
+    position: absolute;
+    z-index: 1;
+    top: $top;
+    left: $left;
+    transform: rotate(179.93deg);
+}
+
+.categorybg {
+    position: relative;
+    z-index: 2;
+
+    .circles {
+        .circle1 {
+            @include circleFnc($width: 270px,
+                $top: 469px, $left: -186px);
+        }
+
+        .circle2 {
+            @include circleFnc($width: 32px,
+                $top: 170px, $left: 1338px);
+        }
+
+        .circle3 {
+            @include circleFnc($width: 66px,
+                $top: 511px, $left: 315px);
+        }
+
+        .circle4 {
+            @include circleFnc($width: 32px,
+                $top: 555px, $left: 1141px);
+        }
+
+        .circle5 {
+            @include circleFnc($width: 32px,
+                $top: 76px, $left: 752px);
+        }
+
+        .circle6 {
+            width: 268px;
+            height: 268px;
+            border: 2px solid rgba(197, 197, 197, 0.096);
+            border-radius: 50%;
+            background: linear-gradient(152.6deg, #CDB4DB 1.87%, #B8D8EA 144.2%);
+            position: absolute;
+            z-index: 1;
+            right: 308px;
+            bottom: -468px;
+        }
+
+        .circle7 {
+            @include circleFnc($width: 189px,
+                $top: 89px, $left: 191px);
+        }
+
+        .circle8 {
+            @include circleFnc($width: 129px,
+                $top: 323px, $left: 499px);
+        }
+    }
+
+}

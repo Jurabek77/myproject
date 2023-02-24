@@ -1,0 +1,50 @@
+.locationPage {
+    height: 100vh;
+    background: radial-gradient(50.95% 90.67% at 36.1% 44.34%, rgba(255, 255, 255, 0.66) 0%, rgba(211, 213, 231, 0.5544) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .location_title {
+        width: 100%;
+        padding: 28px 0;
+        display: flex;
+        justify-content: center;
+        h3{
+            margin-top: 30px;
+        }
+    }
+
+    .location-sections {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .location_map{
+            iframe{
+                border-radius: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.116)
+            }
+        }
+        .location_texts {
+            .btn_google_Map{
+                background: rgb(201, 135, 96);
+                border-radius: 8px;
+                margin: 32px 0 0 90px;
+                color: white;
+                padding: 8px 18px;
+            }
+            .location_cardText {
+                padding: 30px 40px;
+                width: 373px;
+                height: 248px;
+                background: rgba(110, 163, 175, 0.74);
+                border: 1px solid rgba(0, 0, 0, 0.08);
+                box-shadow: -26px -26px 2px #AED7C8;
+                border-radius: 40px;
+                color: white;
+
+            }
+        }
+    }
+
+}

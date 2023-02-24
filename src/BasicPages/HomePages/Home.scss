@@ -1,0 +1,329 @@
+* {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/**********************************/
+/*****------NAVBAR.JS--------********/
+/**********************************/
+.homeNavbar {
+    height: 46px;
+    width: 100%;
+    background: #B5B4D1;
+    border-radius: 6px 6px 36px 36px;
+    position: relative;
+
+    .navItem {
+        align-items: center;
+        font-size: 15px;
+        justify-content: flex-end;
+        width: 100%;
+        .toggle{
+            visibility: hidden;
+        }
+        .navbar_bell{
+            display: flex;
+            padding: 20px 10px;
+            height: 80px;
+            width: 160px;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            border-radius: 10px;
+            background: #fff;
+            top: 45px;
+            right: 85px;
+            border: 1px solid rgba(0, 0, 0, 0.123);
+            .square{
+                width: 20px;
+                margin: -65px 0 0 0;
+                height: 20px;
+                background: #fff;
+                transform: rotate(43deg);
+                border: 1px solid rgba(0, 0, 0, 0.055);
+                position: absolute;
+                border-style: outset none none dashed;
+            }
+           
+            h6{
+                margin: 0;
+            }
+            input{
+                height: 20px;
+                width: 40px;
+            }
+        }
+        button {
+            background: none;
+            color: white;
+            padding: 3px 14px;
+            border: none;
+            margin-left: 14px;
+        }
+        .active {
+            box-shadow: 0 .1rem .25rem rgba(#000, .075);
+            background: rgb(255, 0, 0);
+        }
+        .nav_icons {
+            margin-left: 12%;
+            width: 24%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                margin-left: 28px;
+                font-size: 24px;
+                color: white;
+            }
+        }
+    }
+}
+
+/************ Add ****************/
+
+
+
+/**********************************/
+/*****------BASIC.JS--------********/
+/**********************************/
+$borderImg: 18%;
+
+.navbHome{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 0 50px;
+}
+.homeBasic{
+    height: 55vh;
+    display: flex;
+    align-items: center;
+}
+
+.home__btns {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    transform: translate(70px, 60px);
+    .homeBtn {
+        width: 150px;
+        height: 45px;
+        background: #B7CEE9;
+        border-radius: 10px;
+    }
+
+    .location__btn {
+        width: 45px;
+        height: 45px;
+        background: rgba(237, 237, 233, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 74px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    
+
+}
+
+.HomeWelcome {
+    width: 407px;
+    height: 152px;
+    background: linear-gradient(180deg, rgba(241, 246, 248, 0.49) 0%, rgba(241, 246, 248, 0.42) 100%);
+    opacity: 0.8;
+    box-shadow: 0px 0px 22px 12px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(33px);
+    border-radius: 40px;
+    margin: 125px 0 0 0;
+    padding: 13px 0 0 0;
+
+    h2 {
+        font-size: 30px;
+    }
+
+    div {
+        font-size: 18px;
+    }
+}
+
+.homeImg1 {
+    position: absolute;
+    width: calc(301px - 64px);
+    height: calc(394px - 75px);
+    border-radius: $borderImg;
+
+}
+
+.homeImg2 {
+    position: absolute;
+    width: calc(232px - 30px);
+    height: calc(178px - 35px);
+    border-radius: $borderImg;
+    transform: translate(-140px, 235px);
+}
+
+.homeImg3 {
+    position: absolute;
+    width: calc(222px - 30px);
+    height: calc(200px - 35px);
+    border-radius: $borderImg;
+    transform: translate(137px, 189px);
+}
+
+.homeImg4 {
+    position: absolute;
+    width: calc(189px - 30px);
+    height: calc(209px - 35px);
+    border-radius: $borderImg;
+    transform: translate(-105px, -50px);
+}
+
+.homeHello {
+    width: 300px;
+    height: 90px;
+    background: rgba(217, 211, 244, 0.84);
+    opacity: 0.98;
+    transform: translate(94px, 50px);
+    box-shadow: -1px 0px 15px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+}
+
+.homeimgs {
+    align-items: center;
+    position: relative;
+    display: flex;
+
+    div {
+        transform: translate(78px, 10px);
+    }
+}
+
+
+/**********************************/
+/*****------HOME.JS--------********/
+/**********************************/
+.homePages {
+    background: #F3F8F1;
+    height: 100vh;
+}
+
+.home_bg {
+    // background: url("https://i.parket-sale.ru/i/a/7/tovari-dlya-doma-domashnii-tekstil-shtori-rulonnie-den-noch-rollo-den-noch-myatnii-4.jpg") center / cover no-repeat;
+    background: #F3F8F1;
+    // height: 100vh;
+}
+
+// .fixeds{
+//     margin: 0 auto;
+//     padding: 30px;
+//     display: flex;
+//     justify-content: center;
+//     .circles{
+//         bottom: 10px;
+//         position: fixed;
+//         .circle{
+//             width: 13px;
+//             height: 13px;
+//             background: rgb(228, 154, 250);
+//             margin: 0 10px;
+//             border-radius: 50px;
+//             &:hover{
+//                 transform: scale(1.4);
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+/**********************************/
+/*****------HomeBg.js--------********/
+/**********************************/
+@mixin circleFnc($width: 30px, $top: 30px, $left: 30px) {
+    width: $width;
+    height: $width;
+    border: 2px solid rgba(197, 197, 197, 0.096);
+    border-radius: 50%;
+    background: linear-gradient(152.6deg, rgba(156, 183, 189, 0) 1.87%, #B8D8EA 144.2%);
+    position: absolute;
+    z-index: 1;
+    top: $top;
+    left: $left;
+}
+
+.bg-index {
+    position: relative;
+    z-index: 2;
+    .circles {
+        .circle1 {
+            @include circleFnc($width: 270px,
+                $top: -70px, $left: -70px);
+            // margin: -70px;
+        }
+
+        .circle2 {
+            @include circleFnc($width: 32px,
+                $top: 170px, $left: 1338px);
+        }
+
+        .circle3 {
+            @include circleFnc($width: 66px,
+                $top: 612px, $left: 129px);
+        }
+
+        .circle4 {
+            @include circleFnc($width: 32px,
+                $top: 555px, $left: 497px);
+        }
+
+        .circle5 {
+            @include circleFnc($width: 32px,
+                $top: 76px, $left: 752px);
+        }
+
+        .circle6 {
+            width: 268px;
+            height: 268px;
+            border: 2px solid rgba(197, 197, 197, 0.096);
+            border-radius: 50%;
+            background: linear-gradient(152.6deg, rgba(156, 183, 189, 0) 1.87%, #B8D8EA 144.2%);
+            position: absolute;
+            z-index: 1;
+            right: -1191px;
+            bottom: -791px;
+        }
+
+        .circle7 {
+            @include circleFnc($width: 189px,
+                $top: 173px, $left: 840px);
+        }
+
+        .circle8 {
+            @include circleFnc($width: 129px,
+                $top: 323px, $left: 305px);
+        }
+    }
+
+}
+
+
+
+/**********************************/
+/*****------ALL--------********/
+/**********************************/
+.marginX * {
+    margin: 0 8px;
+}
+
+.cursorPointer * {
+    cursor: pointer;
+}

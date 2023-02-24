@@ -1,0 +1,191 @@
+.contacts-bg {
+    position: relative;
+    z-index: 4;
+    height: 100vh;
+    background: radial-gradient(50.95% 90.67% at 36.1% 44.34%, rgba(255, 251, 241, 0.66) 0%, rgba(211, 231, 212, 0.5544) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+
+    .contacts-body {
+        .contact_modal_phone{
+            visibility: hidden;
+            // display: none;
+            width: 85vw;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            z-index: 9999999999;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.315);
+            .phone_close_modal{
+                font-size: 50px;
+                padding: 0px 22px 5px 22px;
+                color: white;
+                position: absolute;
+                background: rgb(255, 112, 112);
+                top: 30px;
+                right: 40px;
+            }
+            .contact_modal_phone_item{
+                font-size: 40px;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 30vw;
+                height: 28vh;
+                background: rgb(255, 253, 253);
+            }
+        }
+        .contact_modal_telegram{
+            visibility: hidden;
+            // display: none;
+            width: 85vw;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            z-index: 9999999999;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.315);
+            .phone_close_modal{
+                font-size: 50px;
+                padding: 0px 22px 5px 22px;
+                color: white;
+                position: absolute;
+                background: rgb(255, 112, 112);
+                top: 30px;
+                right: 40px;
+            }
+            .contact_modal_phone_item{
+                font-size: 40px;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 30vw;
+                height: 28vh;
+                background: rgb(255, 253, 253);
+            }
+        }
+        .contact_modal_gmail{
+            visibility: hidden;
+            // display: none;
+            width: 85vw;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            z-index: 9999999999;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.315);
+            .phone_close_modal{
+                font-size: 50px;
+                padding: 0px 22px 5px 22px;
+                color: white;
+                position: absolute;
+                background: rgb(255, 112, 112);
+                top: 30px;
+                right: 40px;
+            }
+            .contact_modal_phone_item{
+                font-size: 40px;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 30vw;
+                height: 28vh;
+                background: rgb(255, 253, 253);
+            }
+        }
+        .constacts_title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 22px 0 22px;
+            text-align: center;
+            h2 {
+                font-size: 32px;
+                margin-top: 30px;
+            }
+        }
+
+        .contacts-Lines {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 88px 70px;
+            .contacts-item {
+                padding: 0 28px;
+                text-align: center;
+                width: 240px;
+                height: 220px;
+                background: #EDE8F2;
+                border: 1px solid rgba(0, 0, 0, 0.08);
+                border-radius: 27px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .contacts-circle {
+                    width: 100px;
+                    height: 100px;
+                    background: #DDD3E3;
+                    border: 1px solid rgba(0, 0, 0, 0.08);
+                    border-radius: 114.5px;
+                    margin: -50px auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+
+                .contacts__items__text {
+                    font-size: 24px;
+                    margin: auto 0;
+                    padding-top: 40px;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .contact_btn_group {
+            display: flex;
+            width: 788px;
+            height: 87px;
+            background: linear-gradient(91.2deg, rgba(233, 242, 255, 0.6) -12.53%, rgba(255, 253, 233, 0.6) 122%);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(34px);
+            /* Note: backdrop-filter has minimal browser support */
+            margin: 0 auto;
+            padding: 0 0 0 36px;
+            border-radius: 20px;
+            align-items: center;
+
+            .contact_click_text {
+                h5 {
+                    margin-bottom: 2px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+           button{
+               padding: 7px 26px;
+            background: #C3D9B8;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.068);
+            color: rgba(255, 255, 255, 0.952);
+           }
+
+        }
+    }
+}

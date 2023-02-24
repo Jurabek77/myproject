@@ -1,0 +1,210 @@
+.shopping {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    background: radial-gradient(107.97% 213.65% at -8.09% -12.67%, rgba(214, 221, 238, 0.12) 0%, #F2F4F5 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .shopping_body {
+        height: 100vh;
+        width: 100vw;
+        .noActive{
+            display: none;
+        }
+        .shopping_filter{
+            .shopping_filter_price{
+                margin-top: 20px;
+                width: 92%;
+                border-radius: 10px;
+                background: #DEE3D3;
+                padding: 10px 5px;
+                .price_title{
+                    padding: 2px 8px;
+                    color: white;
+                    background: #D4D1F3;
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    margin: -20px auto;
+                }
+                .filter_price_inputs{
+                    margin-top: 28px;
+                    display: flex;
+                    justify-content: space-around;
+                    input{
+                     width: 45%;
+                     height: 25px;
+                    }
+                }
+            }
+            .shopping_filter_checks{
+                margin-top: 40px;
+                width: 92%;
+                border-radius: 10px;
+                background: #DEE3D3;
+                padding: 10px 5px;
+                .filter_check_title{
+                    padding: 2px 8px;
+                    color: white;
+                    background: #D4D1F3;
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    margin: -20px auto;
+                }
+                .filter_check_list{
+                    margin-top: 22px;
+                    div{
+                        font-size: 11px;
+                        font-weight: 400;
+                        align-items: center;
+                        display: flex;
+                        .checkbox{
+                            margin: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .shopping_nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 6vh;
+
+            .nav_home {
+                .LinkHome {
+                    padding: 3px 14px;
+                    border-radius: 3px;
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    background: rgb(105, 135, 199);
+                }
+            }
+
+            .nav_icons_line {
+                * {
+                    border: none;
+                    background: none;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 30px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+        .shppings_section {
+            display: flex;
+
+            .shopping_sidebar {
+                width: 210px;
+                max-height: calc(100vh - 6.8vh);
+                border: 1px solid red;
+
+                .shopping_sidebar_menu {
+                    justify-content: space-between;
+                    margin: 22px 0 0 0;
+                    padding: 0 10px;
+
+                    * {
+                        border-radius: 4px;
+                        padding: 2px 18px;
+                        background: rgb(244, 219, 252);
+                        border: 1px solid rgba(0, 0, 0, 0.212);
+                        font-size: 18px;
+                        transform: scale(0.9);
+                    }
+
+                    .active {
+                        font-weight: 600;
+                        color: white;
+                        background: rgb(213, 137, 223);
+                        transform: scale(1.06);
+                    }
+                }
+
+                .shopping_sidebar_body {
+                    padding: 24px 0 0 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    // gap: 8px;
+                    .sidebar_menu_item {
+                        font-weight: 490;
+                        color: rgba(0, 0, 0, 0.685);
+                        font-size: 19px;
+                        display: flex;
+                        margin: 18px 0;
+                        //  border: 1px dotted rgba(46, 135, 207, 0.301);
+                        border-radius: 50px 0 0 50px;
+                        //  justify-content: space-aro;
+                        padding: 5px 0 4px 23px;
+                        align-items: center;
+                         cursor: pointer;
+                        .sidebar_menu_icon_store {
+                            width: 36px;
+                            height: 34px;
+                            border-radius: 6px;
+                            filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+                            margin-right: 18px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgb(168, 201, 216);
+
+                            img {
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+
+                        .sidebar_menu_icon_store {
+                            width: 36px;
+                            height: 34px;
+                            border-radius: 6px;
+                            filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+                            margin-right: 16px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgb(168, 201, 216);
+
+                            img {
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+                    }
+
+                    .active {
+                        background: rgb(164, 212, 200);
+                        color: white;
+                        font-size: 24px;
+                        border-radius: 50px 0 0 50px;
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            .shopping_products {
+                width: calc(100vw - 210px);
+                height: calc(100vh - 7vh);
+                border: 1px solid red;
+                border-radius: 48px 0 0 0;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    position: relative;
+    z-index: 3;
+}

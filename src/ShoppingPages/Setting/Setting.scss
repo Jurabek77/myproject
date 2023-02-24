@@ -1,0 +1,66 @@
+.Pagesetting{
+    width: 100%;
+    height: 100%;
+    border: 2px solid orange;
+    // background: rgb(109, 146, 163);
+    border-radius: 48px 0 0 0;
+    display: flex;
+    // align-items: center;
+    padding: 70px 0 0 0;
+    // justify-content: center;
+    .nav_hidden{
+        visibility: hidden;
+    }
+    .settingNav{
+        background: #B5B4D1;
+        width: calc(100% - 2px);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        border-radius: 47px 0 0 3px;
+        .active{
+            background: rgb(255, 65, 198);
+        }
+    }
+    .settingBodys{
+        .centrMenu{
+            width: calc(100vw - 214px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            .setting_category{
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.164);
+        width: 300px;
+        height: 400px;
+        background: rgb(255, 255, 255);
+        border-radius: 14px;
+        display: flex;
+        margin: auto auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        img{
+            margin: -98px 0 25px 0;
+        }
+        button{
+            width: 85%;
+            height: 50px;
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background: #7EA8BE;
+        }
+            }
+        }
+    }
+    
+}

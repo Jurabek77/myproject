@@ -1,0 +1,140 @@
+.buyCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    * {
+        overflow: hidden;
+    }
+
+    .selectionCard {
+        width: 540px;
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            border-radius: 14px;
+        }
+    }
+
+}
+
+.buyForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .formSection {
+        width: 380px;
+        padding: 50px 40px 12px 40px;
+        flex-direction: column;
+        display: flex;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+
+        * {
+            color: rgba(0, 0, 0, 0.726);
+        }
+
+        img {
+            display: flex;
+            margin: -98px auto 0;
+        }
+
+        input {
+            background: #E4E7FF;
+            border: 1px solid #BEC1DE;
+            border-radius: 8px;
+            height: 40px;
+        }
+
+        .formBtnLine {
+            display: flex;
+            justify-content: space-around;
+            margin: 22px 0 14px 0;
+
+            button {
+                width: 100px;
+                height: 40px;
+                border-radius: 8px;
+                background: #BEC1DE;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background: #7BC89A;
+                }
+            }
+        }
+
+        .formCheck {
+            margin-top: 8px;
+            width: 32%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            input {
+                height: 16px;
+                width: 16px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        // gap: 18px;
+        .cardNumber,
+        .cardDate,
+        .cardCv,
+        .cardName {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .cardDates {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                input {
+                    width: 40%;
+                }
+
+                h3 {
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+        }
+
+        .cardCvNameLine {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+
+            .cardName {
+                width: 56%;
+            }
+
+            .NameInputs,
+            .Cvv {
+                width: 100%;
+            }
+
+            .cardCv {
+                width: 36%;
+            }
+        }
+
+    }
+
+}
